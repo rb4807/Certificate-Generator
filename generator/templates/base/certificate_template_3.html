@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Certificate</title>
+    </head>
+    <style type='text/css'>
+        .outer-border{
+            width:800px; height:550px; padding:20px; text-align:center; border: 10px solid #673AB7; margin-left: 21%;
+        }
+        
+        .inner-dotted-border{
+            width:750px; height:500px; padding:20px; text-align:center; border: 5px solid #673AB7;border-style: dotted;
+        }
+        
+        .certification{
+            font-size:50px; font-weight:bold; color: #663ab7;
+        }
+        
+        .certify{
+            font-size:25px;
+        }
+        
+        .name{
+            font-size:30px; color: green;
+        }
+        
+        .fs-30{
+            font-size:30px;
+        }
+        
+        .fs-20{
+            font-size:20px;
+        }
+            
+    </style>
+    <body>
+        <div class="outer-border">
+            <div class="inner-dotted-border">
+                <div class="certification">Certificate of Completion</div>
+                <br><br>
+                <div class="certify"><i>This is to certify that</i></div>
+                <br><br>
+                <div class="name"><b>{{ name }}</b></div><br/><br/>
+                <div class="certify"><i>has successfully completed the certification</i></div> <br/><br/>
+                <h4 class="fs-30">{{ course }}</h4>
+                <div class="certify"><h3>on</h3></div><br>
+                <div class="fs-30">{{ date }}</div>
+            </div>
+        </div>
+    </body>
+</html>
